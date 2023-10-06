@@ -280,6 +280,7 @@
                 <id>integration-test</id>
                 <goals>
                   <goal>install</goal>
+                  <goal>package</goal>
                   <goal>integration-test</goal>
                   <goal>verify</goal>
                 </goals>
