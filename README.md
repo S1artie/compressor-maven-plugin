@@ -19,7 +19,7 @@ It leverages two other Maven libraries in order to do the actual compression:
 
 ```
 <plugin>
-    <groupId>de.firehead.compressor</groupId>
+    <groupId>de.firehead</groupId>
     <artifactId>compressor-maven-plugin</artifactId>
     <version>1.0.0</version>
     <executions>
