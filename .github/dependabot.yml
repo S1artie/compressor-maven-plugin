@@ -11,3 +11,4 @@ updates:
       interval: "weekly"
     ignore:
       - dependency-name: "maven.version"
+      - dependency-name: "org.apache.maven.plugins:maven-plugin-plugin"
