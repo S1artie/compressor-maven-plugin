@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>de.firehead.compressor</groupId>
+  <artifactId>compressor-maven-plugin</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>Test CompressorMojo</name>
+
+  <build>
+    <plugins>
+      <plugin>
+		<groupId>de.firehead.compressor</groupId>
+        <artifactId>compressor-maven-plugin</artifactId>
+        <version>${project.version}</version>
+        <configuration>
+			<compressionsets>
+				<compressionset>
+					<algorithm>ZSTD</algorithm>
+					<addSuffix>true</addSuffix>
+					<filesets>
+						<fileset>
+							<directory>test-data</directory>
+							<includes>
+								<include>*.txt</include>
+							</includes>
+						</fileset>						
+					</filesets>
+				</compressionset>
+			</compressionsets>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
