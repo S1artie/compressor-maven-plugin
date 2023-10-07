@@ -18,6 +18,15 @@
       <url>http://opensource.org/licenses/MIT</url>
     </license>
   </licenses>
+
+  <developers>
+    <developer>
+      <name>Rene Schneider</name>
+      <email>rene@firehead.de</email>
+      <organization>firehead</organization>
+      <organizationUrl>https://github.com/S1artie</organizationUrl>
+    </developer>
+  </developers>
   
   <scm>
     <url>https://github.com/S1artie/compressor-maven-plugin</url>
