@@ -37,7 +37,7 @@ jobs:
         gpg-passphrase: MAVEN_GPG_PASSPHRASE # env variable for GPG private key passphrase
 
     - name: Build and Publish to Maven Central
-      run: mvn -B clean deploy -Prun-its --file pom.xml
+      run: mvn -B clean deploy -Prun-its,release --file pom.xml
       env:
         OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
         OSSRH_TOKEN: ${{ secrets.OSSRH_TOKEN }}
