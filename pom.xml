@@ -146,8 +146,9 @@
           <version>3.6.0</version>
         </plugin>
         <plugin>
-          <artifactId>maven-gpg-plugin</artifactId>
-          <version>1.5</version>
+          <groupId>org.simplify4u.plugins</groupId>
+          <artifactId>sign-maven-plugin</artifactId>
+          <version>1.0.1</version>
         </plugin>
         <plugin>
           <groupId>org.sonatype.plugins</groupId>
@@ -259,25 +260,15 @@
         </executions>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-gpg-plugin</artifactId>
-        <version>1.5</version>
+        <groupId>org.simplify4u.plugins</groupId>
+        <artifactId>sign-maven-plugin</artifactId>
+        <version>1.0.1</version>
         <executions>
-          <execution>
-            <id>sign-artifacts</id>
-            <phase>verify</phase>
-            <goals>
-              <goal>sign</goal>
-            </goals>
-            <configuration>
-              <!-- Prevent gpg from using pinentry programs -->
-              <gpgArguments>
-                <arg>--pinentry-mode</arg>
-                <arg>loopback</arg>
-              </gpgArguments>
-              <passphraseServerId>gpg.passphrase</passphraseServerId>
-            </configuration>
-          </execution>
+            <execution>
+                <goals>
+                    <goal>sign</goal>
+                </goals>
+            </execution>
         </executions>
       </plugin>
 
