@@ -24,8 +24,6 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn -B clean install -Prun-its --file pom.xml
 
     - name: Set up Maven Central
       uses: actions/setup-java@v3
@@ -38,8 +36,8 @@ jobs:
         gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }} # Value of the GPG private key to import
         gpg-passphrase: MAVEN_GPG_PASSPHRASE # env variable for GPG private key passphrase
 
-    - name: Publish to Maven Central
-      run: mvn deploy
+    - name: Build and Publish to Maven Central
+      run: mvn -B clean deploy -Prun-its --file pom.xml
       env:
         OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
         OSSRH_TOKEN: ${{ secrets.OSSRH_TOKEN }}
