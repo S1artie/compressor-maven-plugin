@@ -23,13 +23,15 @@
     <developer>
       <name>Rene Schneider</name>
       <email>rene@firehead.de</email>
-      <organization>firehead</organization>
+      <organization>firehead.de</organization>
       <organizationUrl>https://github.com/S1artie</organizationUrl>
     </developer>
   </developers>
   
   <scm>
     <url>https://github.com/S1artie/compressor-maven-plugin</url>
+    <connection>scm:git:git@github.com:S1artie/compressor-maven-plugin.git</connection>
+    <developerConnection>scm:git:ssh://github.com:S1artie/compressor-maven-plugin.git</developerConnection>
   </scm>
 
   <distributionManagement>
