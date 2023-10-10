@@ -15,3 +15,5 @@ updates:
       - dependency-name: "org.apache.maven.plugins:maven-install-plugin"
       - dependency-name: "org.apache.maven:maven-core"
       - dependency-name: "org.apache.maven:maven-compat"
+      - dependency-name: "org.codehaus.plexus:plexus-utils"
+        update-types: ["version-update:semver-major"]
