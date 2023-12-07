@@ -9,7 +9,7 @@
   <packaging>maven-plugin</packaging>
 
   <name>compressor-maven-plugin Maven Plugin</name>
-  <description>This Maven plugin allows to perform file compression tasks as part of a Maven build sequence.</description>
+  <description>This Maven plugin allows to perform plain file compression (using Zstd, Bzip2, LZ4, LZO or Snappy) as part of a Maven build sequence.</description>
   <url>https://github.com/S1artie/compressor-maven-plugin</url>
 
   <licenses>
